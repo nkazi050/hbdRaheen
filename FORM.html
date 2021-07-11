@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head><title>student information</title>
+</head>
+<script>
+	function validateForm(){
+    	var x = document.forms["myForm"]["name"].value;
+        var y = document.forms["myForm"]["Fname"].value;
+        var z = document.forms["myForm"]["Mname"].value;
+        var u = document.forms["myForm"]["gender"].value;
+        var v = document.forms["myForm"]["address"].value;
+        var a = document.forms["myForm"]["city"].value;
+        var b = document.forms["myForm"]["college"].value;
+        var d = document.forms["myForm"]["contact"].value;
+        
+        if(x == ""){
+        	alert("fill in the name");
+			return false;
+			}
+        if(y == ""){
+        	alert("fill in the Father's name");
+			return false;
+            }
+        if(z == ""){
+        	alert("fill in the Mother's name");
+			return false;
+            }
+        if(u == ""){
+        	alert("fill in the Gender");
+			return false;
+			}    
+        if(v == ""){
+        	alert("fill in the address");
+			return false;
+			}
+        if(a == ""){
+        	alert("fill in the city");
+			return false;
+			}
+        
+        if(b == ""){
+        	alert("fill in the college's name");
+			return false;
+			}
+            
+        var email = document.forms["myForm"]["email"].value;    
+        atpos = email.indexOf("@");
+        dotpos = email.lastIndexOf(".");
+            if(email == null || email == ""){
+                alert("Please enter Email address");
+                return false;
+                }
+                
+            else if(atpos<1||dotpos-atpos<2){
+            	alert("enter a valid email address");
+                return false;
+            }    
+            
+        if(d == ""){
+        	alert("fill in the contact");
+			return false;
+			}
+        else if(d.length!=10||isNaN(d))   {
+        	alert("Please enter a valid phone number");
+            return false;
+        } 
+    }
+    
+	</script>
+</head>
+<body style="background-color:lightcyan">
+
+
+	<form name="myForm" action="display.php" onsubmit="return validateForm()" method="post">
+    <table align=center text-align=center style="background-color:powderblue;">
+    <tr>
+    <td style="color:cyan;"><h2 style="background-color:darkred"  >Students Information</h2>
+    </tr>
+    
+    <tr>
+    <td>
+    	<label name="name" value="name">Student's name:</label>
+        <input type="text" name="name" value="">
+        </tr>
+    
+    <tr>
+    <td>
+    	<label name="Fname" value="Father's name">Father's name:</label>
+        <input type="text" name="Fname" value="">
+        </tr>
+    
+    <tr>
+    <td>
+    	<label name="Mname" value="Mother's name">Mother's name:</label>
+        <input type="text" name="Mname" value="">
+        </tr>
+    
+    <tr>
+    <td>
+    	<label name="Gender" value="gender">Gender:</label>
+        <input type="radio" name="gender" value="Mr.">Mr.
+        <input type="radio" name="gender" value="Ms.">Ms.
+        </tr>
+    
+    <tr>
+    <td>
+    	<label name="address" value="">Address:</label>
+        <textarea name="address" value="" rows="4" cols="20"></textarea>
+    	</tr>
+        
+    <tr>
+    <td>
+    	<label name="city" value="city">City:</label>
+        <select name="city" value="city">
+        <option value""></option>
+        <option value"Surat">Surat</option>
+        <option value"Mumbai">Mumbai</option>
+        <option value"Ahemdabad">Ahemdabad</option>
+        <option value"Pune">Pune</option>
+        <option value"Delhi">Delhi</option>
+        </select>
+        </tr>
+        
+    <tr>
+    <td>
+    <label name="college" value="college">College's name:</label>
+    <select name="college" value="college">
+    	<option value""></option>
+        <option value"IIIT">IIIT</option>
+        <option value"IIT">IIT</option>
+        <option value"SVNIT">SVNIT</option>
+        <option value"SCET">SCET</option>
+        </select>
+        </tr>
+        
+    <tr>
+    <td>
+    	<label name="email" value="">Student's e-mail:</label>
+        <input type="text" name="email" value="">
+        </tr>
+        
+    <tr>
+    <td>
+    	<label name="contact" value="Student's contact">Student's contact number:</label>
+        <input type="text" name="contact" value="">
+        </tr>    
+        
+    <tr>
+    <td>
+    <input type="submit" value="submit">
+    </td>
+    <tr>
+    
+
+
+</body>
+</html>
