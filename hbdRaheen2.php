@@ -12,7 +12,7 @@
 
             body {
                 margin: 0% auto;
-                background: linear-gradient(0deg, #e37878 20%,#97dfe6 100%);
+                background: linear-gradient(0deg, #97dfe6 20%,#e37878 100%);
                 letter-spacing: 1px;
                 line-height: 1.8;
                 font-family: 'Courgette', cursive;
