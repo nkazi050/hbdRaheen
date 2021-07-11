@@ -27,7 +27,7 @@
 
             .txt{
                 background: linear-gradient(180deg, #e37878 20%,#97dfe6 100%);
-                border: 2px white solid;
+                border-top: 2px white solid;
                 width: 100%;
             }
 
