@@ -26,7 +26,7 @@
             }
 
             .txt{
-                background: linear-gradient(180deg, #e37878 20%,#97dfe6 100%);
+                background-color: #e37878;
                 position: relative;
                 width: 100%;
             }
