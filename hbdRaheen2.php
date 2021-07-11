@@ -25,7 +25,6 @@
             .txt{
                 border: 2px white solid;
                 width: 100%;
-                height: 5%;
             }
 
             #img1 {
