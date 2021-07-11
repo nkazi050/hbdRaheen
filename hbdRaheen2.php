@@ -19,7 +19,7 @@
 
             .vdo{
                 width: 100%;
-                height: 95%;
+                height: 100%;
             }
 
             .txt{
